@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker { image 'windows' } }
+    agent { docker { image 'ubuntu' } }
     stages {
         stage('build') {
             steps {
-                sh 'windows --version'
+                sh 'python --version'
             }
         }
     }
